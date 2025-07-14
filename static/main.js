@@ -4,7 +4,7 @@ const log = document.getElementById('log')
 const ctx = canvas.getContext('2d')
 
 // WebSocket 연결
-const socket = new WebSocket('ws://' + location.host + '/ws')
+const socket = new WebSocket('wss://' + location.host + '/ws')
 
 socket.onopen = () => {
   console.log('✅ WebSocket 연결됨')

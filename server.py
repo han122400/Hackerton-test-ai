@@ -4,8 +4,11 @@ import numpy as np
 import cv2
 import mediapipe as mp
 import math
+from fastapi.staticfiles import StaticFiles
+import os
 
 app = FastAPI()
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # MediaPipe 초기화
 mp_pose = mp.solutions.pose
