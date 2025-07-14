@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>실시간 영상 분석</title>
+    <style>
+      body {
+        background: #111;
+        color: white;
+        text-align: center;
+        font-family: sans-serif;
+      }
+      video {
+        width: 90vw;
+        max-width: 600px;
+        border: 3px solid white;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+      #log {
+        background: #222;
+        padding: 10px;
+        margin-top: 20px;
+        white-space: pre-wrap;
+        font-family: monospace;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: 20px auto;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>📷 실시간 카메라 + 분석 로그</h1>
+    <video id="video" autoplay playsinline width="480" height="360"></video>
+    <canvas id="canvas" width="480" height="360" style="display: none"></canvas>
+    <br />
+    <canvas
+      id="earChart"
+      width="500"
+      height="100"
+      style="
+        margin-top: 20px;
+        background: #111;
+        border: 1px solid #555;
+        border-radius: 8px;
+      "
+    ></canvas>
+
+    <div
+      id="log"
+      style="
+        margin-top: 20px;
+        padding: 10px;
+        width: 90%;
+        max-height: 300px;
+        overflow-y: auto;
+        background-color: #1c1c1c;
+        border-radius: 8px;
+        font-family: 'monospace';
+      "
+    >
+      📡 분석 로그 출력 대기 중...
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

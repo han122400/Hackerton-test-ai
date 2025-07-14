@@ -1,0 +1,19 @@
+.log-entry {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.log-bubble {
+  background-color: #29407a !important;
+  color: #fff;
+  padding: 2px 8px;
+  font-size: 11px;
+  border-radius: 6px;
+  line-height: 1.2;
+  max-width: 320px;
+  min-width: 120px;
+  margin: 0 auto;
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
